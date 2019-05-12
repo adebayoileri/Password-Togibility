@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> PASS TOG</title>
+    <style>
+     .container
+ {
+     display: flex;
+     flex-direction: column;
+     
+ }
+ .container div
+ {
+     padding: 15px;
+     margin : 20px;
+     box-shadow: 2px 4px 4px 2px lightblue; 
+     flex-wrap: wrap;
+     border-radius: 4px;
+ }
+ button
+ {
+    width: 300px;
+    align-self: center;
+    margin-top: 30px;
+    border: 2px solid black;
+    background-color: transparent;
+ }
+ .passer
+ {
+     width: 720px;
+     align-self: center;
+ }
+
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Toggle</h1>
+       Type password here ====> <input type="password" class="passer" id="pass" title="password"/>
+        <button> Submit</button>
+        <input type="checkbox" name="" onclick="change()" class="controlla" id="checkpass"/><p>Show password</p>
+    </div>
+    <script>
+       function change()
+        {
+            var x =document.getElementById("pass")
+            if(x.type === "password")
+            {
+            x.type="text";
+            }
+            else 
+            {
+              x.type="password";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
